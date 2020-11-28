@@ -1290,7 +1290,7 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   content: '';
   left: 0;
   bottom: -8px;
-  border: 2px solid #51AA1B;
+  border: 2px solid #33BDA4;
   width: 33%;
   height: 2px;
   border-radius: 20px;
@@ -5144,5 +5144,241 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   background-position: left top;
   width: 100%;
   height: 100vh;
+}
+
+.hospital_area .filter_area {
+  border: 1px solid #4d4d4d;
+  border-radius: 8px;
+  padding: 20px 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  position: relative;
+  top: 80px;
+}
+
+.hospital_area .filter_area .filter_titel {
+  margin-bottom: 15px;
+}
+
+.hospital_area .filter_area .filter_titel h4 {
+  margin: 0;
+  color: #161616;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  padding: 15px 25px 0px 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.hospital_area .filter_area .hospital_filter_box .titel h5 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #161616;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .search_for {
+  position: relative;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .search_for p {
+  text-align: right;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #4d4d4d;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn {
+  background: transparent;
+  border-bottom: 1px solid #161616;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #161616;
+  position: relative;
+  width: 216px;
+  text-align: left;
+  padding: 8px 10px 8px 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn::after {
+  position: absolute;
+  content: '\f078';
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #161616;
+  font-family: "Font Awesome 5 Free";
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #161616;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  padding-left: 25px;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input[type=checkbox]:checked .check_mark {
+  background: #161616;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label .check_mark {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  left: 0;
+  top: 5px;
+  border: 1px solid #161616;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label .check_mark:after {
+  content: '\f00c';
+  display: block;
+  width: 12px;
+  color: #fff;
+  background-color: #fff;
+  font-size: 8px;
+  line-height: 12px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input:checked ~ .check_mark {
+  border: 1px solid #33BDA4;
+}
+
+.hospital_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input:checked ~ .check_mark::after {
+  color: #33BDA4;
+  background: #fff;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn {
+  width: 208px;
+  margin-right: 2px;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card {
+  margin: 5px 0px;
+  border: none;
+  overflow: hidden;
+  height: 220px;
+  background-color: #fff;
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img {
+  position: relative;
+  display: block;
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+  padding: 20px;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img img {
+  border-radius: 20%;
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img .hover_ctn {
+  position: absolute;
+  bottom: 20px;
+  right: 30%;
+  visibility: hidden;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img .hover_ctn ul li {
+  background: #33BDA4;
+  width: 36px;
+  height: 36px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin-right: 6px;
+  padding: 7px 6px;
+  text-align: center;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img .hover_ctn ul li:last-child {
+  margin-right: 0;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .hospital_img .hover_ctn ul li a i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .card-body {
+  padding: 0px 14px 10px 14px;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .card-body p {
+  color: #161616;
+  font-size: 13px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card .card-body p:hover {
+  color: #33BDA4;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card:hover .hover_ctn {
+  visibility: visible;
+  bottom: 30px;
+  transition: .6s;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+}
+
+.hospital_area .hospital_list_area ul li.hospital_ctn .card:hover {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=style.css.map */

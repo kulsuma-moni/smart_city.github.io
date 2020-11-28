@@ -1179,7 +1179,7 @@ header.header_area{
                     content: '';
                     left: 0;
                     bottom: -8px;
-                    border: 2px solid #51AA1B;
+                    border: 2px solid $basic_color;
                     width: 33%;
                     height: 2px;
                     border-radius: 20px;
@@ -4830,4 +4830,238 @@ header.header_area{
     height:100vh;
 }
 // CITY FOCUS AREA CSS END
-  // SMART CITY HOME PAGE CSS END
+// SMART CITY HOME PAGE CSS END
+// HOSPITAL PAGE CSS START
+.hospital_area{
+    .filter_area{
+        border: 1px solid $color1;
+        border-radius: 8px;
+        padding: 20px 16px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        position: relative;
+        top: 80px;
+        .filter_titel{
+            margin-bottom: 15px;
+            h4{
+                margin: 0;
+                color: $text_color;
+                font-size: 18px;
+                // background: $basic_color;
+                font-weight: 500;
+                line-height: 1;
+                text-transform: capitalize;
+                padding: 15px 25px 0px 10px;
+                text-align: center;
+                letter-spacing: 1px;
+
+            }
+        }
+        .hospital_filter_box{
+            // margin-bottom: 20px;
+            .titel{
+                h5{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $text_color;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+            }
+            .box_ctn{
+                .search_for{
+                    position: relative;
+                    p{
+                        text-align: right;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        text-transform: capitalize;
+                        color: $color1;
+                        a.btn{
+                            background:transparent;
+                            border-bottom: 1px solid $text_color;
+                            text-transform: capitalize;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 1.2;
+                            color: $text_color;
+                            position: relative;
+                            width: 216px;
+                            text-align: left;
+                            padding:8px 10px 8px 0;
+                            border-radius: 0px;
+                            -webkit-border-radius: 0px;
+                            -moz-border-radius: 0px;
+                            -ms-border-radius: 0px;
+                            -o-border-radius: 0px;
+                
+                            &::after{
+                                position: absolute;
+                                content: '\f078';
+                                right: 10px;
+                                top: 10px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: $text_color;
+                                font-family: "Font Awesome 5 Free";
+                            }
+                        }
+                    }
+                }
+               .brand_item{
+                .form-group{
+                    display: block;
+                    margin-left: 5px;
+                    margin-bottom: 0px;
+                    label{
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: $text_color;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        position: relative;
+                        padding-left: 25px;
+                        input[type=checkbox]{
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            &:checked .check_mark{
+                                background:$text_color;
+                            }
+                        }
+                        .check_mark {
+                            position: absolute;
+                            height: 14px;
+                            width: 14px;
+                            background-color: #eee;
+                            left: 0;
+                            top: 5px;
+                            border: 1px solid $text_color;
+                            &:after {
+                                content: '\f00c';
+                                display: block;
+                                width: 12px;
+                                color: #fff;
+                                background-color: #fff;
+                                font-size: 8px;
+                                line-height: 12px;
+                                text-align: center;
+                                font-family: "Font Awesome 5 Free";
+                            }
+                        }
+                        input:checked ~ .check_mark {
+                            border: 1px solid $basic_color;
+                        }
+                        input:checked ~ .check_mark::after{
+                            color: $basic_color;
+                            background: #fff;
+                        }
+                    }
+                }
+               } 
+            }
+        }
+    }
+    .hospital_list_area{
+        ul{
+            li.hospital_ctn{
+                width: 208px;
+                margin-right: 2px;
+
+                .card{
+                    margin: 5px 0px;
+                    border: none;
+                    overflow: hidden;
+                    //padding: 10px;
+                    height: 220px;
+                    background-color: #fff;
+                    border-radius: 20%;
+                    -webkit-border-radius: 20%;
+                    -moz-border-radius: 20%;
+                    -ms-border-radius: 20%;
+                    -o-border-radius: 20%;
+                    .hospital_img{
+                        position: relative;
+                        display: block;
+                        transition: all 700ms ease-in-out;
+                        padding: 20px;
+                        img{
+                            border-radius: 20%;
+                            -webkit-border-radius: 20%;
+                            -moz-border-radius: 20%;
+                            -ms-border-radius: 20%;
+                            -o-border-radius: 20%;
+                        }
+                        .hover_ctn{
+                            position: absolute;
+                            bottom: 20px;
+                            right: 30%;
+                            visibility: hidden;
+                            ul{
+                                li{
+                                    background: $basic_color;
+                                    width: 36px;
+                                    height: 36px;
+                                    border-radius: 30px;
+                                    -webkit-border-radius: 30px;
+                                    -moz-border-radius: 30px;
+                                    -ms-border-radius: 30px;
+                                    -o-border-radius: 30px;
+                                    margin-right: 6px;
+                                    padding: 7px 6px;
+                                    text-align: center;
+                                    &:last-child{
+                                        margin-right: 0;
+                                    }
+                                    a{
+                                        i{
+                                            color: $color2;
+                                            font-size: 20px;
+
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                    .card-body{
+                        // background-color: #e7e7e7;
+                        padding: 0px 14px 10px 14px;
+                        p{
+                            color: $text_color;
+                            font-size: 13px;
+                            line-height: 1.5;
+                            text-transform: capitalize;
+                            letter-spacing: 0.75px;
+                            font-weight: 600;
+                            text-align: center;
+                            cursor: pointer;
+                            &:hover{
+                                color: $basic_color;
+                            }
+                        }
+                    }
+                    &:hover .hover_ctn{
+                        visibility: visible;
+                        bottom: 30px;
+                        transition: .6s;
+                        -webkit-transition: .6s;
+                        -moz-transition: .6s;
+                        -ms-transition: .6s;
+                        -o-transition: .6s;
+                    }
+                    &:hover{
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+                    }
+                }
+        }
+        }
+    }
+}
+// HOSPITAL PAGE CSS END
