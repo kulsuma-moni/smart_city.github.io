@@ -4835,12 +4835,12 @@ header.header_area{
 .hospital_area{
     .filter_area{
         border: 1px solid $color1;
-        border-radius: 8px;
+        border-radius: 10px;
         padding: 20px 16px;
-        -webkit-border-radius: 8px;
-        -moz-border-radius: 8px;
-        -ms-border-radius: 8px;
-        -o-border-radius: 8px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
         position: relative;
         top: 80px;
         .filter_titel{
@@ -4882,7 +4882,8 @@ header.header_area{
                         color: $color1;
                         a.btn{
                             background:transparent;
-                            border-bottom: 1px solid $text_color;
+                            //border-bottom: 1px solid $text_color;
+                            border: 1px solid $text_color;
                             text-transform: capitalize;
                             font-weight: 400;
                             font-size: 14px;
@@ -4891,13 +4892,13 @@ header.header_area{
                             position: relative;
                             width: 216px;
                             text-align: left;
-                            padding:8px 10px 8px 0;
-                            border-radius: 0px;
-                            -webkit-border-radius: 0px;
-                            -moz-border-radius: 0px;
-                            -ms-border-radius: 0px;
-                            -o-border-radius: 0px;
-                
+                            padding:8px 10px 8px 8px;
+                            //padding:8px 10px 8px 0;
+                            border-radius:6px;
+                            -webkit-border-radius:6px;
+                            -moz-border-radius:6px;
+                            -ms-border-radius:6px;
+                            -o-border-radius:6px;
                             &::after{
                                 position: absolute;
                                 content: '\f078';

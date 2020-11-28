@@ -5148,12 +5148,12 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 
 .hospital_area .filter_area {
   border: 1px solid #4d4d4d;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 20px 16px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   position: relative;
   top: 80px;
 }
@@ -5197,7 +5197,7 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 
 .hospital_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn {
   background: transparent;
-  border-bottom: 1px solid #161616;
+  border: 1px solid #161616;
   text-transform: capitalize;
   font-weight: 400;
   font-size: 14px;
@@ -5206,12 +5206,12 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   position: relative;
   width: 216px;
   text-align: left;
-  padding: 8px 10px 8px 0;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
+  padding: 8px 10px 8px 8px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .hospital_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn::after {
