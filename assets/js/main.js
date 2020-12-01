@@ -185,6 +185,28 @@ $('.banner_img').owlCarousel({
             items:1
         }
     }
+});
+
+// SMART CITY  SINGLE PAGE SLIDER
+$('.banner_2_img').owlCarousel({
+	loop:true,
+	margin:10,
+	nav:false,
+	autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+	dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
 })
 
 // WOW JS

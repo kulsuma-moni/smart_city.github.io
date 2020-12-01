@@ -103,13 +103,14 @@ button:focus {
   font-size: 30px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #161616;
+  color: #33BDA4;
   font-weight: 400;
   margin: 0;
 }
 
 .section_titel h4 span {
   font-weight: 700;
+  color: #161616;
 }
 
 .loader_box {
@@ -790,6 +791,47 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 }
 
 .middle_content_area .hero_area_banner .banner_img .owl-dots .owl-dot.active span {
+  background: #33BDA4;
+  width: 30px;
+  height: 10px;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img {
+  position: relative;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img .banner_item_ctn img {
+  width: 100%;
+  margin: 0 0px 0 0;
+  height: 350px;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img .owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img .owl-dots {
+  position: absolute;
+  bottom: 0;
+  left: 46%;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}
+
+.middle_content_area .hero_area_banner .banner_2_img .owl-dots .owl-dot.active span {
   background: #33BDA4;
   width: 30px;
   height: 10px;
@@ -5380,5 +5422,177 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 .hospital_area .hospital_list_area ul li.hospital_ctn .card:hover {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.single_hospital_area {
+  background: #fff;
+}
+
+.single_hospital_area .hospital_left_sidebar .nav a.nav-link {
+  background: #33BDA4;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  padding: 10px 16px;
+  margin-bottom: 4px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .single_ctn_titel h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #161616;
+  margin-bottom: 20px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .single_txt h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #161616;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .single_txt p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #161616;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant {
+  margin-bottom: 22px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body {
+  position: relative;
+  top: 30px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #161616;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #161616;
+  margin-bottom: 6px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body .consaltant_btn {
+  margin-top: 50px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body .consaltant_btn .btn {
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1;
+  background: #33BDA4;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list ul li.single_consaltant .media .media-body .consaltant_btn .btn:hover {
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list .search_consaltant p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #161616;
+  margin-bottom: 6px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list .search_consaltant .sort_by_ctn {
+  position: relative;
+  top: 0px;
+}
+
+.single_hospital_area .single_hospital_ctn .single_ctn .consaltant_list .search_consaltant .sort_by_ctn .sort_by_option {
+  -webkit-box-shadow: 2px 6px 18px 0px #fff;
+          box-shadow: 2px 6px 18px 0px #fff;
+}
+
+.single_hospital_area .hos_right {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #161616;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn h4::after {
+  position: absolute;
+  content: '';
+  border-bottom: 2px solid #33BDA4;
+  width: 40%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn ul li {
+  position: relative;
+  display: block;
+  margin-bottom: 7px;
+  padding-left: 14px;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn ul li::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #33BDA4;
+  left: 0;
+  top: 17%;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn ul li a {
+  font-weight: 400;
+  color: #161616;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-text-decoration: underline dotted #33BDA4 1px;
+          text-decoration: underline dotted #33BDA4 1px;
+}
+
+.single_hospital_area .hospital_right_ctn .right_ctn ul li a:hover {
+  color: #33BDA4;
+  -webkit-text-decoration: underline solid #33BDA4 1px;
+          text-decoration: underline solid #33BDA4 1px;
 }
 /*# sourceMappingURL=style.css.map */
