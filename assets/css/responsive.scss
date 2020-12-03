@@ -270,6 +270,9 @@ header.header_area{
     width: 259px;
     margin-right: 4px;
 }
+.mb_header_area .modal .modal-content .modal-body #myTabContent .top_mid_menu ul li .sub_menu {
+    width: 348px;
+}
 .middle_content_area .hero_area_banner .banner_img .owl-dots {
     left: 40%;
 }
@@ -376,6 +379,9 @@ header.header_area{
 .mb_header_area{
     display: block;
 }
+.mb_header_area .modal .modal-content .modal-body #myTabContent .top_mid_menu ul li .sub_menu {
+    width: 348px;
+}
 .shopping_mall_area .all_shopping_mall ul li {
     width: 230px;
 }
@@ -452,7 +458,10 @@ header.header_area{
         margin-right: 12px;
     }
     header.header_area .top_mid_menu ul li {
-        margin: 0 4px;
+        margin: 0 3px;
+    }
+    header.header_area .top_mid_menu ul li a {
+        font-size: 13px;
     }
     .shopping_mall_area .all_shopping_mall ul li {
         width: 230px;

@@ -377,7 +377,11 @@ header.header_area{
             position: relative;
             top: 10px;
             li{
-                margin: 0 14px;
+                position: relative;
+                margin: 0 10px;
+                &:last-child{
+                    margin-right: 0;
+                }
                 a{
                     text-transform: capitalize;
                     color: $text_color;
@@ -388,6 +392,34 @@ header.header_area{
                     &:hover{
                         color: $basic_color;
                     }
+                }
+                .sub_menu{
+                    position: absolute;
+                    background: $color2;
+                    width: 160px;
+                    top: 100%;
+                    padding: 20px 0px;
+                    opacity: 1;
+                    visibility: hidden;
+                    -webkit-box-shadow: 0px 0px 27px 0px #e5e5e5;
+                            box-shadow: 0px 0px 27px 0px #e5e5e5;
+                    left: 0px;
+                    transition: .3s;
+                    -webkit-transition: .3s;
+                    -moz-transition: .3s;
+                    -ms-transition: .3s;
+                    -o-transition: .3s;
+                    z-index: 9;
+                    li{
+                        display: block;
+                        width:100%;
+                        position: relative;
+                        padding:4px 16px;
+                    }
+                }
+                &:hover .sub_menu{
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }
@@ -567,6 +599,7 @@ header.header_area{
                             position: relative;
                             top: 10px;
                             li{
+                                position: relative;
                                 display: block;
                                 margin: 0 6px 10px 0;
                                 a{
@@ -579,6 +612,32 @@ header.header_area{
                                     &:hover{
                                         color: $basic_color;
                                     }
+                                }
+                                .sub_menu{
+                                    position: absolute;
+                                    background: $color2;
+                                    width:308px;
+                                    top: 100%;
+                                    padding: 20px 0px;
+                                    opacity: 1;
+                                    visibility: hidden;
+                                    left: -16px;
+                                    transition: .3s;
+                                    -webkit-transition: .3s;
+                                    -moz-transition: .3s;
+                                    -ms-transition: .3s;
+                                    -o-transition: .3s;
+                                    z-index: 9;
+                                    li{
+                                        display: block;
+                                        width:100%;
+                                        position: relative;
+                                        padding:4px 16px;
+                                    }
+                                }
+                                &:hover .sub_menu{
+                                    visibility: visible;
+                                    opacity: 1;
                                 }
                             }
                         }
@@ -4056,7 +4115,7 @@ header.header_area{
                     text-transform: capitalize;
                     font-weight: 600;
                     line-height: 20px;
-                    background: #51AA1B;
+                    background:$basic_color;
                     padding: 6px 40px;
                     font-size: 18px;
                     color: #fff;
@@ -4197,7 +4256,7 @@ header.header_area{
                     text-transform: capitalize;
                     font-weight: 600;
                     line-height: 20px;
-                    background: #51AA1B;
+                    background: $basic_color;
                     padding: 6px 40px;
                     font-size: 18px;
                     color: #fff;
@@ -5102,6 +5161,48 @@ header.header_area{
 }
 // HOSPITAL PAGE CSS END
 // SINGLE HOSPITAL PAGE CSS START
+.faciliti_area{
+    .box_1{
+        background: $basic_color;
+    }
+    .box_2{
+        background:#2CA690;
+    }
+    .box_3{
+        background: #0c8e77;
+    }
+    .box_4{
+        background:#0e7563;
+    }
+    .faciliti_box{
+        position: relative;
+        padding: 10px;
+
+        a{
+           display: flex;
+        .facilitics_item_img{
+            .ambu_img{
+                width: 100%;
+            }
+            img{
+               width: 60px;
+            }
+        }
+        .box_txt{
+            position: absolute;
+            top: 26px;
+            left: 32%;
+            p{
+                color: $color2;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.4;
+                text-transform: capitalize;
+            }
+        }
+       }
+    }
+}
 .single_hospital_area{
     background: #fff;
     .hospital_left_sidebar{
@@ -5129,8 +5230,8 @@ header.header_area{
                     text-transform: capitalize;
                     color: $text_color;   
                     margin-bottom: 20px;            
+                }
             }
-        }
             .single_txt{
                 h5{
                     font-weight: 600;
@@ -5145,6 +5246,20 @@ header.header_area{
                     line-height: 1.4;
                     color: $text_color;
 
+                }
+                .hospital_accordion{
+                    h3{
+                        font-size: 16px;
+                        line-height: 1.4;
+                        color: $color2;
+                        background: $basic_color;
+
+                    }
+                }
+                .ziehharmonika .active .arrowDown {
+                    bottom: -13px;
+                    border-color: #33bda4 transparent transparent transparent;
+                    opacity: 1;
                 }
             }
             .consaltant_list{
@@ -5216,6 +5331,113 @@ header.header_area{
                             box-shadow: 2px 6px 18px 0px #fff;
 
                         }
+                    }
+                }
+            }
+            .pateient_details{
+                background: $color2;
+                margin-left: 120px;
+                input{
+                    border: 1px solid $basic_color;
+                    width: 50%;
+                    height: 40px;
+                    margin-bottom: 8px;
+                    &:focus{
+                        border: 1px solid $basic_color;
+                    }
+                    &::placeholder{
+                        font-weight:400;
+                        font-size: 14px;
+                        color: #887788;
+                    }
+                }
+                textarea{
+                    border: 1px solid $basic_color;
+                    width: 50%;
+                    height: 100px;
+                    margin-bottom: 10px;
+                    &:focus{
+                        border: 1px solid $basic_color;
+                    }
+                    &::placeholder{
+                        font-weight:400;
+                        font-size: 14px;
+                        color: #887788;
+                    }
+                }
+                .days{
+                    p{
+                        color: $text_color;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        font-weight: 600;
+                    }
+                    .day{
+                        .form-group{
+                            display: block;
+                            margin-left: 5px;
+                            margin-bottom: 0px;
+                            label{
+                                font-size: 14px;
+                                line-height: 1.5;
+                                color: $text_color;
+                                text-transform: capitalize;
+                                font-weight: 600;
+                                position: relative;
+                                padding-left: 25px;
+                                input[type=checkbox]{
+                                        position: absolute;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        height: 0;
+                                        width: 0;
+                                    &:checked .check_mark{
+                                        background:$text_color;
+                                    }
+                                }
+                                .check_mark {
+                                    position: absolute;
+                                    height: 14px;
+                                    width: 14px;
+                                    background-color: #eee;
+                                    left: 0;
+                                    top: 5px;
+                                    border: 1px solid $text_color;
+                                    &:after {
+                                        content: '\f00c';
+                                        display: block;
+                                        width: 12px;
+                                        color: #fff;
+                                        background-color: #fff;
+                                        font-size: 8px;
+                                        line-height: 12px;
+                                        text-align: center;
+                                        font-family: "Font Awesome 5 Free";
+                                    }
+                                }
+                                input:checked ~ .check_mark {
+                                    // background-color:$basic_color;
+                                    border: 1px solid $basic_color;
+                                }
+                                input:checked ~ .check_mark::after{
+                                    // background-color:$basic_color;
+                                    color: $basic_color;
+                                    background: #fff;
+                                }
+                            }
+                        }
+                       } 
+                }
+            }
+            .helth_ques{
+                p{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: $text_color;
+                    a{
+                        color: $basic_color;
+                        text-decoration: underline;
                     }
                 }
             }
