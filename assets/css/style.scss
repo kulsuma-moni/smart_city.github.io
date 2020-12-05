@@ -378,7 +378,7 @@ header.header_area{
             top: 10px;
             li{
                 position: relative;
-                margin: 0 10px;
+                margin: 0 7px;
                 &:last-child{
                     margin-right: 0;
                 }
@@ -430,7 +430,7 @@ header.header_area{
         position: relative;
         top: 10px;
         li{
-            margin-right:15px;
+            margin-right:13px;
             &:last-child{
                 margin-right: 0;
             }
@@ -5243,7 +5243,7 @@ header.header_area{
                 p{
                     font-weight: 400;
                     font-size: 14px;
-                    line-height: 1.4;
+                    line-height: 1.7;
                     color: $text_color;
 
                 }
@@ -5498,3 +5498,256 @@ header.header_area{
     }
 }
 // SINGLE HOSPITAL PAGE CSS END
+// SMART HOUSE PAGE CSS START
+.house_subcat_area{
+    .subcat_item{
+        margin-bottom: 10px;
+        position: relative;
+
+        img{
+            height: 236px;
+        }
+        .subcat_name{
+            p{
+                margin: 0;
+                position: absolute;;
+                z-index: 1;
+                color: #fff;
+                font-size: 16px;
+                background: $basic_color;
+                font-weight: 500;
+                line-height: 1;
+                // display: inline-block;
+                // width: 145px;
+                text-transform:capitalize;
+                border-radius: 0 5px 0 0;
+                padding:10px 12px 10px 12px;
+                -webkit-border-radius: 0 5px 0 0;
+                -moz-border-radius: 0 5px 0 0;
+                -ms-border-radius: 0 5px 0 0;
+                -o-border-radius: 0 5px 0 0;
+                text-align: left;
+                letter-spacing: 1px;
+                top: 0;
+                left: 0;
+                // &::before{
+                //     background: $basic_color;
+                //     content: '';
+                //     height: 100%;
+                //     left: 0;
+                //     position: absolute;
+                //     top: 0;
+                //     width: 15px;
+                //     z-index: 1;
+                //     -webkit-transform: translateX(-100%);
+                //     -moz-transform: translateX(-100%);
+                //     transform: translateX(-100%);
+                //     -ms-transform: translateX(-100%);
+                //     -o-transform: translateX(-100%);
+                // }
+                // &::after{
+                //     border-bottom: 15px solid transparent;
+                //     border-left: 15px solid transparent;
+                //     border-top: 15px solid $basic_color;
+                //     bottom: 0;
+                //     content: '';
+                //     left: -15px;
+                //     position: absolute;
+                //     z-index: 1;
+                //     -webkit-transform: translateY(100%);
+                //     -moz-transform: translateY(100%);
+                //     transform: translateY(100%);
+                //     -ms-transform: translateY(100%);
+                //     -o-transform: translateY(100%);
+                // }
+            }
+        }
+    }
+}
+.letest_listing_area{
+    .listing_tab{
+        margin-top: 64px;
+        .nav{
+            .nav-link{
+             background-color: $color2;
+             font-size: 16px;
+             font-weight: 600;
+             line-height: 1;
+             padding: 10px 15px;
+             position: relative;
+             margin-bottom: 5px;
+             color: $text_color;
+             text-transform: capitalize;
+             &::before{
+                 position: absolute;
+                 content: '';
+                 background: $basic_color;
+                 border: 2px solid $basic_color;
+                 top: 0;
+                 left: 0;
+                 width: 2px;
+                 height: 100%;
+                 visibility: hidden;
+             }
+             &.active{
+                 color: $basic_color;
+             }
+             &.active::before{
+                visibility: visible;
+            }
+            }
+        }
+    }
+    .listing_tab_ctn{
+        .listings_item_detail{
+            .listing_ctn{
+                ul{
+                    display: inline;
+                    li{
+                        position: relative;
+                        margin-right: 5px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        
+                        a{
+                            .listing_item{
+                                margin-bottom: 30px;
+                                overflow: hidden;
+                                .listing_img{
+                                    position: relative;
+                                    margin-bottom: 10px;
+
+                                    width: 455px;
+                                    height: 250px;
+                                    overflow: hidden;
+                                    transition: transform .5s ease;
+                                    &:hover {
+                                        transform: scale(1.05);
+                                    }
+                                    img{
+                                        // width: 455px;
+                                        // height: 250px;
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: transform .8s ease;
+                                    }
+                                    &:hover img {
+                                        transform: scale(1.15);
+                                    }
+                                    .img_btn{
+                                        .bage_btn{
+                                            position: absolute;
+                                            top: 2%;
+                                            left: 2%;
+                                            background-color: $basic_color;
+                                            text-transform: capitalize;
+                                            padding: 6px 8px;
+                                            line-height: 1;
+                                            color: $color2;
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            
+                                        }
+                                        .view_icon{
+                                            position: absolute;
+                                            top: 2%;
+                                            right: 5%;
+                                            color: $color2;
+                                            font-size: 14px;
+                                            display: none;
+                                                i{
+                                                    margin-right: 4px;
+                                                }
+                                            }
+                                    }
+                                    .img_bttom{
+                                        .price{
+                                            position: absolute;
+                                            bottom: 3%;
+                                            left: 2%;
+                                            text-transform: capitalize;
+                                            padding: 6px 8px;
+                                            line-height: 1;
+                                            color: $color2;
+                                            font-size: 26px;
+                                            font-weight: 600;
+                                        }
+                                        .icon{
+                                            position: absolute;
+                                            bottom: 2%;
+                                            right: 8%;
+                                           display: none;
+                                            span{
+                                                font-size: 14px;
+                                                line-height: 1;
+                                                color: $color2;
+                                                line-height: 1;
+                                                font-size: 20px;
+                                                i{
+                                                    margin-right: 5px;
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .listing_txt{
+                                    h6{
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        color: $text_color;
+                                        line-height: 1.5;
+                                        margin-bottom: 7px;
+                                        text-transform: capitalize;
+                                    }
+                                    p{
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: $text_color;
+                                        line-height: 1.5;
+                                        margin-bottom: 10px;
+                                    }
+                                    ul{
+                                        li{
+                                            font-size: 16px;
+                                            color: $basic_color;
+                                            line-height: 1.5;
+                                            i{
+                                                margin-right: 6px;
+                                            }
+                                            &:hover{
+                                                color: #0AAC8F;
+                                                transform: translateY(-4px);
+                                                -webkit-transform: translateY(-4px);
+                                                -moz-transform: translateY(-4px);
+                                                -ms-transform: translateY(-4px);
+                                                -o-transform: translateY(-4px);
+                                                transition: .4s;
+                                                -webkit-transition: .4s;
+                                                -moz-transition: .4s;
+                                                -ms-transition: .4s;
+                                                -o-transition: .4s;
+}
+
+                                        }
+                                    }
+                                }
+
+                                &:hover .img_btn .view_icon{
+                                    display: block;
+                                }
+                                &:hover .img_bttom .icon{
+                                    display: block;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// SMART HOUSE PAGE CSS END

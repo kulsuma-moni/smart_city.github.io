@@ -410,7 +410,7 @@ header.header_area .top_mid_menu ul {
 
 header.header_area .top_mid_menu ul li {
   position: relative;
-  margin: 0 10px;
+  margin: 0 7px;
 }
 
 header.header_area .top_mid_menu ul li:last-child {
@@ -471,7 +471,7 @@ header.header_area .top_bar_right ul {
 }
 
 header.header_area .top_bar_right ul li {
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 header.header_area .top_bar_right ul li:last-child {
@@ -5574,7 +5574,7 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 .single_hospital_area .single_hospital_ctn .single_ctn .single_txt p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.7;
   color: #161616;
 }
 
@@ -5875,5 +5875,229 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   color: #33BDA4;
   -webkit-text-decoration: underline solid #33BDA4 1px;
           text-decoration: underline solid #33BDA4 1px;
+}
+
+.house_subcat_area .subcat_item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.house_subcat_area .subcat_item img {
+  height: 236px;
+}
+
+.house_subcat_area .subcat_item .subcat_name p {
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  font-size: 16px;
+  background: #33BDA4;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  border-radius: 0 5px 0 0;
+  padding: 10px 12px 10px 12px;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -ms-border-radius: 0 5px 0 0;
+  -o-border-radius: 0 5px 0 0;
+  text-align: left;
+  letter-spacing: 1px;
+  top: 0;
+  left: 0;
+}
+
+.letest_listing_area .listing_tab {
+  margin-top: 64px;
+}
+
+.letest_listing_area .listing_tab .nav .nav-link {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 10px 15px;
+  position: relative;
+  margin-bottom: 5px;
+  color: #161616;
+  text-transform: capitalize;
+}
+
+.letest_listing_area .listing_tab .nav .nav-link::before {
+  position: absolute;
+  content: '';
+  background: #33BDA4;
+  border: 2px solid #33BDA4;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  visibility: hidden;
+}
+
+.letest_listing_area .listing_tab .nav .nav-link.active {
+  color: #33BDA4;
+}
+
+.letest_listing_area .listing_tab .nav .nav-link.active::before {
+  visibility: visible;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul {
+  display: inline;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li {
+  position: relative;
+  margin-right: 5px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li:last-child {
+  margin-right: 0;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img {
+  position: relative;
+  margin-bottom: 10px;
+  width: 455px;
+  height: 250px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform .8s ease;
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_btn .bage_btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: #33BDA4;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_btn .view_icon {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  color: #ffffff;
+  font-size: 14px;
+  display: none;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_btn .view_icon i {
+  margin-right: 4px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_bttom .price {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon {
+  position: absolute;
+  bottom: 2%;
+  right: 8%;
+  display: none;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon span {
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon span i {
+  margin-right: 5px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt h6 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li {
+  font-size: 16px;
+  color: #33BDA4;
+  line-height: 1.5;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li i {
+  margin-right: 6px;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li:hover {
+  color: #0AAC8F;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item:hover .img_btn .view_icon {
+  display: block;
+}
+
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item:hover .img_bttom .icon {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
