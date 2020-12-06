@@ -4937,6 +4937,7 @@ header.header_area{
         -o-border-radius: 10px;
         position: relative;
         top: 80px;
+        background-color: $color2;
         .filter_titel{
             margin-bottom: 15px;
             h4{
@@ -5614,6 +5615,7 @@ header.header_area{
                             .listing_item{
                                 margin-bottom: 30px;
                                 overflow: hidden;
+                                background-color: $color2;
                                 .listing_img{
                                     position: relative;
                                     margin-bottom: 10px;
@@ -5694,6 +5696,7 @@ header.header_area{
                                     }
                                 }
                                 .listing_txt{
+                                    padding: 0 20px 20px 20px;
                                     h6{
                                         font-weight: 600;
                                         font-size: 18px;
@@ -5711,11 +5714,12 @@ header.header_area{
                                     }
                                     ul{
                                         li{
-                                            font-size: 16px;
+                                            font-size: 14px;
                                             color: $basic_color;
                                             line-height: 1.5;
                                             i{
                                                 margin-right: 6px;
+                                                font-size: 16px;
                                             }
                                             &:hover{
                                                 color: #0AAC8F;
@@ -5751,3 +5755,375 @@ header.header_area{
     }
 }
 // SMART HOUSE PAGE CSS END
+// SMART HOUSE LIST PAGE CSS START
+.house_list_area{
+    .filter_area{
+        border: 1px solid $color1;
+        border-radius: 10px;
+        padding: 20px 16px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        position: relative;
+        top: 80px;
+        background-color: $color2;
+        .filter_titel{
+            margin-bottom: 15px;
+            h4{
+                margin: 0;
+                color: $text_color;
+                font-size: 18px;
+                // background: $basic_color;
+                font-weight: 500;
+                line-height: 1;
+                text-transform: capitalize;
+                padding: 15px 25px 0px 10px;
+                text-align: center;
+                letter-spacing: 1px;
+
+            }
+        }
+        .hospital_filter_box{
+             margin-bottom: 10px;
+            .titel{
+                h5{
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: $text_color;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                }
+            }
+            .box_ctn{
+                .search_for{
+                    position: relative;
+                    p{
+                        text-align: right;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.5;
+                        text-transform: capitalize;
+                        color: $color1;
+                        a.btn{
+                            background:transparent;
+                            //border-bottom: 1px solid $text_color;
+                            border: 1px solid $text_color;
+                            text-transform: capitalize;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 1.2;
+                            color: $text_color;
+                            position: relative;
+                            width: 216px;
+                            text-align: left;
+                            padding:8px 10px 8px 8px;
+                            //padding:8px 10px 8px 0;
+                            border-radius:6px;
+                            -webkit-border-radius:6px;
+                            -moz-border-radius:6px;
+                            -ms-border-radius:6px;
+                            -o-border-radius:6px;
+                            &::after{
+                                position: absolute;
+                                content: '\f078';
+                                right: 10px;
+                                top: 10px;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: $text_color;
+                                font-family: "Font Awesome 5 Free";
+                            }
+                        }
+                    }
+                }
+               .brand_item{
+                .form-group{
+                    display: block;
+                    margin-left: 5px;
+                    margin-bottom: 0px;
+                    label{
+                        font-size: 14px;
+                        line-height: 1.5;
+                        color: $text_color;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        position: relative;
+                        padding-left: 25px;
+                        input[type=checkbox]{
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            &:checked .check_mark{
+                                background:$text_color;
+                            }
+                        }
+                        .check_mark {
+                            position: absolute;
+                            height: 14px;
+                            width: 14px;
+                            background-color: #eee;
+                            left: 0;
+                            top: 5px;
+                            border: 1px solid $text_color;
+                            &:after {
+                                content: '\f00c';
+                                display: block;
+                                width: 12px;
+                                color: #fff;
+                                background-color: #fff;
+                                font-size: 8px;
+                                line-height: 12px;
+                                text-align: center;
+                                font-family: "Font Awesome 5 Free";
+                            }
+                        }
+                        input:checked ~ .check_mark {
+                            border: 1px solid $basic_color;
+                        }
+                        input:checked ~ .check_mark::after{
+                            color: $basic_color;
+                            background: #fff;
+                        }
+                    }
+                }
+               } 
+               .property_type{
+                   text-align: center;
+                   li{
+                       margin-right: 4px;
+                       &:last-child{
+                           margin-right: 0;
+                       }
+                       a{
+                           text-transform: capitalize;
+                           font-size: 16px;
+                           line-height: 1;
+                           background: transparent;
+                           border: 1px solid $basic_color;
+                           color: $basic_color;
+                           padding: 6px 16px;
+                           &.active{
+                               background: $basic_color;
+                               border: 1px solid transparent;
+                               color: $color2;
+                           }
+                       }
+                   }
+               }
+            }
+            .extra-controls{
+                display: flex;
+                input{
+                    width: 100px;
+                    border: 1px solid #161616;
+                    margin-right: 15px;
+                    border-radius:6px;
+                    -webkit-border-radius:6px;
+                    -moz-border-radius:6px;
+                    -ms-border-radius:6px;
+                    -o-border-radius:6px;
+                    text-align: center;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+
+                }
+            }
+            .range-slider {
+                position: relative;
+                height: 60px;
+                .irs--round .irs-handle {
+                    top: 26px;
+                    width: 18px;
+                    height: 18px;
+                    border: 4px solid #33bda4;
+                    background-color: white;
+                    border-radius: 24px;
+                    box-shadow: 0 1px 3px rgba(0,0,255,0.3);
+                }
+                .irs--round .irs-bar {
+                    top: 32px;
+                    height: 4px;
+                    background-color: #33bda4;
+                }
+                .irs--round .irs-line {
+                    top: 32px;
+                    height: 4px;
+                    background-color: #dee4ec;
+                    border-radius: 4px;
+                }
+                .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+                    font-size: 14px;
+                    line-height: 1;
+                    text-shadow: none;
+                    padding: 3px 5px;
+                    background-color: #33bda4;
+                    color: white;
+                    border-radius: 4px;
+                }
+                .irs--round .irs-min, .irs--round .irs-max {
+                    display: none;
+                }
+            } 
+
+        }
+    }
+    .house_list{
+        .listing_ctn{
+            ul{
+                display: inline;
+                li{
+                    position: relative;
+                    margin-right: 5px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    
+                    a{
+                        .listing_item{
+                            margin-bottom: 30px;
+                            overflow: hidden;
+                            background-color: $color2;
+                            .listing_img{
+                                position: relative;
+                                margin-bottom: 10px;
+
+                                width: 420px;
+                                height: 250px;
+                                overflow: hidden;
+                                transition: transform .5s ease;
+                                &:hover {
+                                    transform: scale(1.05);
+                                }
+                                img{
+                                    // width: 455px;
+                                    // height: 250px;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    transition: transform .8s ease;
+                                }
+                                &:hover img {
+                                    transform: scale(1.15);
+                                }
+                                .img_btn{
+                                    .bage_btn{
+                                        position: absolute;
+                                        top: 2%;
+                                        left: 2%;
+                                        background-color: $basic_color;
+                                        text-transform: capitalize;
+                                        padding: 6px 8px;
+                                        line-height: 1;
+                                        color: $color2;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        
+                                    }
+                                    .view_icon{
+                                        position: absolute;
+                                        top: 2%;
+                                        right: 5%;
+                                        color: $color2;
+                                        font-size: 14px;
+                                        display: none;
+                                            i{
+                                                margin-right: 4px;
+                                            }
+                                        }
+                                }
+                                .img_bttom{
+                                    .price{
+                                        position: absolute;
+                                        bottom: 3%;
+                                        left: 2%;
+                                        text-transform: capitalize;
+                                        padding: 6px 8px;
+                                        line-height: 1;
+                                        color: $color2;
+                                        font-size: 26px;
+                                        font-weight: 600;
+                                    }
+                                    .icon{
+                                        position: absolute;
+                                        bottom: 2%;
+                                        right: 8%;
+                                       display: none;
+                                        span{
+                                            font-size: 14px;
+                                            line-height: 1;
+                                            color: $color2;
+                                            line-height: 1;
+                                            font-size: 20px;
+                                            i{
+                                                margin-right: 5px;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .listing_txt{
+                                padding: 0 20px 20px 20px;
+                                h6{
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    color: $text_color;
+                                    line-height: 1.5;
+                                    margin-bottom: 7px;
+                                    text-transform: capitalize;
+                                }
+                                p{
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    color: $text_color;
+                                    line-height: 1.5;
+                                    margin-bottom: 10px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 14px;
+                                        color: $basic_color;
+                                        line-height: 1.5;
+                                        i{
+                                            margin-right: 6px;
+                                            font-size: 16px;
+                                        }
+                                        &:hover{
+                                            color: #0AAC8F;
+                                            transform: translateY(-4px);
+                                            -webkit-transform: translateY(-4px);
+                                            -moz-transform: translateY(-4px);
+                                            -ms-transform: translateY(-4px);
+                                            -o-transform: translateY(-4px);
+                                            transition: .4s;
+                                            -webkit-transition: .4s;
+                                            -moz-transition: .4s;
+                                            -ms-transition: .4s;
+                                            -o-transition: .4s;
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            &:hover .img_btn .view_icon{
+                                display: block;
+                            }
+                            &:hover .img_bttom .icon{
+                                display: block;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// SMART HOUSE LIST PAGE CSS END

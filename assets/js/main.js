@@ -353,6 +353,12 @@ $('.user_13').click(function(){
 			$('.sort_by_option').toggle();
 		});
 
+		// HOUSE FILTER AREA ACTIVE CLASS ADD & REMOVE
+		$('.box_ctn a').click(function(){
+			$('.box_ctn a').removeClass("active");
+			$(this).addClass("active");
+		});
+		  
 		// ACCRODION
 		$('.ziehharmonika').ziehharmonika({
 
@@ -384,4 +390,5 @@ $('.user_13').click(function(){
 			scroll: true
 			
 		  });
+
 })(jQuery);

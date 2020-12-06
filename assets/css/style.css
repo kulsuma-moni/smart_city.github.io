@@ -5264,6 +5264,7 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   -o-border-radius: 10px;
   position: relative;
   top: 80px;
+  background-color: #ffffff;
 }
 
 .hospital_area .filter_area .filter_titel {
@@ -5960,6 +5961,7 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item {
   margin-bottom: 30px;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_img {
@@ -6052,6 +6054,10 @@ header.header_area .top_bar_right ul li .top_btn:hover {
   margin-right: 5px;
 }
 
+.letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt {
+  padding: 0 20px 20px 20px;
+}
+
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt h6 {
   font-weight: 600;
   font-size: 18px;
@@ -6070,13 +6076,14 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 }
 
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li {
-  font-size: 16px;
+  font-size: 14px;
   color: #33BDA4;
   line-height: 1.5;
 }
 
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li i {
   margin-right: 6px;
+  font-size: 16px;
 }
 
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item .listing_txt ul li:hover {
@@ -6098,6 +6105,405 @@ header.header_area .top_bar_right ul li .top_btn:hover {
 }
 
 .letest_listing_area .listing_tab_ctn .listings_item_detail .listing_ctn ul li a .listing_item:hover .img_bttom .icon {
+  display: block;
+}
+
+.house_list_area .filter_area {
+  border: 1px solid #4d4d4d;
+  border-radius: 10px;
+  padding: 20px 16px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  top: 80px;
+  background-color: #ffffff;
+}
+
+.house_list_area .filter_area .filter_titel {
+  margin-bottom: 15px;
+}
+
+.house_list_area .filter_area .filter_titel h4 {
+  margin: 0;
+  color: #161616;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  padding: 15px 25px 0px 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.house_list_area .filter_area .hospital_filter_box {
+  margin-bottom: 10px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .titel h5 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #161616;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .search_for {
+  position: relative;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .search_for p {
+  text-align: right;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #4d4d4d;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn {
+  background: transparent;
+  border: 1px solid #161616;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #161616;
+  position: relative;
+  width: 216px;
+  text-align: left;
+  padding: 8px 10px 8px 8px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .search_for p a.btn::after {
+  position: absolute;
+  content: '\f078';
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #161616;
+  font-family: "Font Awesome 5 Free";
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group {
+  display: block;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #161616;
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  padding-left: 25px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input[type=checkbox]:checked .check_mark {
+  background: #161616;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label .check_mark {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  left: 0;
+  top: 5px;
+  border: 1px solid #161616;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label .check_mark:after {
+  content: '\f00c';
+  display: block;
+  width: 12px;
+  color: #fff;
+  background-color: #fff;
+  font-size: 8px;
+  line-height: 12px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input:checked ~ .check_mark {
+  border: 1px solid #33BDA4;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .brand_item .form-group label input:checked ~ .check_mark::after {
+  color: #33BDA4;
+  background: #fff;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .property_type {
+  text-align: center;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .property_type li {
+  margin-right: 4px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .property_type li:last-child {
+  margin-right: 0;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .property_type li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid #33BDA4;
+  color: #33BDA4;
+  padding: 6px 16px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .box_ctn .property_type li a.active {
+  background: #33BDA4;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
+.house_list_area .filter_area .hospital_filter_box .extra-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.house_list_area .filter_area .hospital_filter_box .extra-controls input {
+  width: 100px;
+  border: 1px solid #161616;
+  margin-right: 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  text-align: center;
+}
+
+.house_list_area .filter_area .hospital_filter_box .extra-controls input:last-child {
+  margin-right: 0;
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider {
+  position: relative;
+  height: 60px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-handle {
+  top: 26px;
+  width: 18px;
+  height: 18px;
+  border: 4px solid #33bda4;
+  background-color: white;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 255, 0.3);
+          box-shadow: 0 1px 3px rgba(0, 0, 255, 0.3);
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-bar {
+  top: 32px;
+  height: 4px;
+  background-color: #33bda4;
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-line {
+  top: 32px;
+  height: 4px;
+  background-color: #dee4ec;
+  border-radius: 4px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-from, .house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-to, .house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-single {
+  font-size: 14px;
+  line-height: 1;
+  text-shadow: none;
+  padding: 3px 5px;
+  background-color: #33bda4;
+  color: white;
+  border-radius: 4px;
+}
+
+.house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-min, .house_list_area .filter_area .hospital_filter_box .range-slider .irs--round .irs-max {
+  display: none;
+}
+
+.house_list_area .house_list .listing_ctn ul {
+  display: inline;
+}
+
+.house_list_area .house_list .listing_ctn ul li {
+  position: relative;
+  margin-right: 5px;
+}
+
+.house_list_area .house_list .listing_ctn ul li:last-child {
+  margin-right: 0;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img {
+  position: relative;
+  margin-bottom: 10px;
+  width: 420px;
+  height: 250px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform .8s ease;
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img:hover img {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_btn .bage_btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: #33BDA4;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_btn .view_icon {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  color: #ffffff;
+  font-size: 14px;
+  display: none;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_btn .view_icon i {
+  margin-right: 4px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_bttom .price {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  text-transform: capitalize;
+  padding: 6px 8px;
+  line-height: 1;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon {
+  position: absolute;
+  bottom: 2%;
+  right: 8%;
+  display: none;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon span {
+  font-size: 14px;
+  line-height: 1;
+  color: #ffffff;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_img .img_bttom .icon span i {
+  margin-right: 5px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt {
+  padding: 0 20px 20px 20px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt h6 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  text-transform: capitalize;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #161616;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt ul li {
+  font-size: 14px;
+  color: #33BDA4;
+  line-height: 1.5;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt ul li i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item .listing_txt ul li:hover {
+  color: #0AAC8F;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  transition: .4s;
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item:hover .img_btn .view_icon {
+  display: block;
+}
+
+.house_list_area .house_list .listing_ctn ul li a .listing_item:hover .img_bttom .icon {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */
