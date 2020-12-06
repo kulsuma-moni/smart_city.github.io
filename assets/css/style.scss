@@ -5518,8 +5518,6 @@ header.header_area{
                 background: $basic_color;
                 font-weight: 500;
                 line-height: 1;
-                // display: inline-block;
-                // width: 145px;
                 text-transform:capitalize;
                 border-radius: 0 5px 0 0;
                 padding:10px 12px 10px 12px;
@@ -5531,36 +5529,6 @@ header.header_area{
                 letter-spacing: 1px;
                 top: 0;
                 left: 0;
-                // &::before{
-                //     background: $basic_color;
-                //     content: '';
-                //     height: 100%;
-                //     left: 0;
-                //     position: absolute;
-                //     top: 0;
-                //     width: 15px;
-                //     z-index: 1;
-                //     -webkit-transform: translateX(-100%);
-                //     -moz-transform: translateX(-100%);
-                //     transform: translateX(-100%);
-                //     -ms-transform: translateX(-100%);
-                //     -o-transform: translateX(-100%);
-                // }
-                // &::after{
-                //     border-bottom: 15px solid transparent;
-                //     border-left: 15px solid transparent;
-                //     border-top: 15px solid $basic_color;
-                //     bottom: 0;
-                //     content: '';
-                //     left: -15px;
-                //     position: absolute;
-                //     z-index: 1;
-                //     -webkit-transform: translateY(100%);
-                //     -moz-transform: translateY(100%);
-                //     transform: translateY(100%);
-                //     -ms-transform: translateY(100%);
-                //     -o-transform: translateY(100%);
-                // }
             }
         }
     }
